@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Ezzat's Portfolio</title>
+  </head>
+  <body>
+    <div id="cur"></div>
+    <div id="cur-r"></div>
+
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="logo">EE.</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <p class="h-tag">// Frontend Developer</p>
+      <h1 class="h-name">Ezzat<br /><em>Eldeeb.</em></h1>
+      <p class="h-desc">
+        I write clean HTML, CSS &amp; JavaScript — crafting responsive
+        interfaces that feel as good as they look. Fresh perspective, sharp
+        attention to detail.
+      </p>
+      <div class="h-cta">
+        <a href="#projects" class="btn btn-p">View My Work</a>
+        <a href="#contact" class="btn btn-o">Get In Touch</a>
+      </div>
+      <div class="h-scroll">Scroll</div>
+      <span class="h-yr">© 2025</span>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="reveal">
+        <p class="sec-label">// About Me</p>
+        <h2 class="about-title">
+          Building the web,<br /><span>one line at a time.</span>
+        </h2>
+        <p class="about-body">
+          Frontend developer with a passion for writing semantic, accessible
+          HTML and bringing designs to life with CSS and vanilla JavaScript.
+          Currently leveling up every day — turning curiosity into code and
+          ideas into real interfaces.
+        </p>
+        <p class="about-note">
+          * Early-career developer — hungry to learn, eager to build.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-n">&lt;1</div>
+            <div class="stat-l">Yr Exp</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">3</div>
+            <div class="stat-l">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">∞</div>
+            <div class="stat-l">Curiosity</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal skills-wrap" id="skills-sec">
+        <p class="sec-label" style="margin-bottom: 1.4rem">// Skills</p>
+        <div class="sk-row">
+          <span class="sk-name">HTML5</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
+          <span class="sk-pct">88%</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-name">CSS3</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="82"></div></div>
+          <span class="sk-pct">82%</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-name">JavaScript</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="70"></div></div>
+          <span class="sk-pct">70%</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-name">Responsive</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+          <span class="sk-pct">85%</span>
+        </div>
+        <div class="sk-row">
+          <span class="sk-name">Git</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="60"></div></div>
+          <span class="sk-pct">60%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="proj-hdr reveal">
+        <div>
+          <p class="sec-label">// Selected Work</p>
+          <h2 class="proj-title">Recent Projects</h2>
+        </div>
+        <span class="proj-count">03 projects</span>
+      </div>
+      <div class="proj-grid reveal">
+        <div class="p-card">
+          <p class="p-num">01 —</p>
+          <h3 class="p-name">Weather App</h3>
+          <p class="p-desc">
+            A live weather app that fetches real-time data from OpenWeatherMap
+            API. Features dynamic backgrounds that change with weather
+            conditions, 5-day forecast, geolocation support, and glassmorphism
+            UI.
+          </p>
+          <div class="p-tags">
+            <span class="tag">Vanilla JS</span><span class="tag">Fetch API</span
+            ><span class="tag">async/await</span
+            ><span class="tag">localStorage</span>
+          </div>
+          <a
+            href="https://weather-app-three-zeta-25.vercel.app/"
+            target="_blank"
+            class="p-link"
+            >View Project</a
+          >
+        </div>
+        <div class="p-card">
+          <p class="p-num">02 —</p>
+          <h3 class="p-name">Task Manager</h3>
+          <p class="p-desc">
+            A full CRUD task manager with priority levels, filtering, and
+            persistent storage. Data survives page refresh via localStorage — no
+            backend needed.
+          </p>
+          <div class="p-tags">
+            <span class="tag">Vanilla JS</span
+            ><span class="tag">localStorage</span
+            ><span class="tag">DOM API</span><span class="tag">CRUD</span>
+          </div>
+          <a
+            href="https://todolist-eldeeb.vercel.app/"
+            target="_blank"
+            class="p-link"
+            >View Project</a
+          >
+        </div>
+        <div class="p-card">
+          <p class="p-num">03 —</p>
+          <h3 class="p-name">Tip Calculator</h3>
+          <p class="p-desc">
+            A clean bill-splitting calculator with preset and custom tip
+            percentages. Real-time calculations update instantly as you type —
+            built with pure DOM manipulation.
+          </p>
+          <div class="p-tags">
+            <span class="tag">Vanilla JS</span><span class="tag">DOM API</span
+            ><span class="tag">CSS Grid</span>
+          </div>
+          <a
+            href="https://calculator-kappa-topaz-79.vercel.app/"
+            target="_blank"
+            class="p-link"
+            >View Project</a
+          >
+        </div>
+        <div
+          class="p-card"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 220px;
+            opacity: 0.35;
+          "
+        >
+          <p
+            style="
+              font-family: var(--font-m);
+              font-size: 0.75rem;
+              color: var(--muted);
+              text-align: center;
+              letter-spacing: 0.08em;
+            "
+          >
+            More projects<br />coming soon...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="reveal">
+        <p class="sec-label">// Get In Touch</p>
+        <h2 class="c-big">Let's build<br />something <span>together.</span></h2>
+        <p class="c-sub">
+          Open to internships, junior roles, or freelance projects.<br />
+          I'm always up for learning and collaborating.
+        </p>
+        <a href="mailto:ezzateldeeb006@gmail.com" class="c-mail"
+          >ezzateldeeb006@gmail.com</a
+        >
+      </div>
+
+      <form
+        class="c-form reveal"
+        onsubmit="handleForm(event)"
+        action="https://formspree.io/f/xwvjbpzw"
+        method="POST"
+      >
+        <div class="f-grp">
+          <label class="f-lbl">Name</label>
+          <input
+            type="text"
+            class="f-inp"
+            placeholder="Your name"
+            id="fn"
+            name="name"
+          />
+        </div>
+        <div class="f-grp">
+          <label class="f-lbl">Email</label>
+          <input
+            type="email"
+            class="f-inp"
+            placeholder="your@email.com"
+            id="fe"
+            name="email"
+          />
+        </div>
+        <div class="f-grp">
+          <label class="f-lbl">Message</label>
+          <textarea
+            class="f-ta"
+            placeholder="Tell me about your project or opportunity..."
+            id="fm"
+            name="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="f-btn" id="fsub">Send Message →</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2025 Ezzat Eldeeb</span>
+      <div class="socials">
+        <a href="https://github.com/EzzatEldeeb" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/ezzat-eldeeb-ab9836258/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="mailto:ezzateldeeb006@gmail.com">Email</a>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
