@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --bg: #080808;
   --surface: #111;
@@ -22,43 +17,55 @@ body {
   color: var(--text);
   font-family: var(--font-d);
   overflow-x: hidden;
-  cursor: none;
+}
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
 }
 
 /* CURSOR */
-#cur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 9px;
-  height: 9px;
-  background: var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
+#cur,
 #cur-r {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9998;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(232, 255, 77, 0.35);
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition:
-    transform 0.32s cubic-bezier(0.23, 1, 0.32, 1),
-    width 0.25s,
-    height 0.25s;
+  display: none;
 }
-body:has(a:hover) #cur-r,
-body:has(button:hover) #cur-r {
-  width: 58px;
-  height: 58px;
-  opacity: 0.55;
+@media (pointer: fine) {
+  #cur {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 9px;
+    height: 9px;
+    background: var(--accent);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  #cur-r {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(232, 255, 77, 0.35);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition:
+      transform 0.32s cubic-bezier(0.23, 1, 0.32, 1),
+      width 0.25s,
+      height 0.25s;
+  }
+  body:has(a:hover) #cur-r,
+  body:has(button:hover) #cur-r {
+    width: 58px;
+    height: 58px;
+    opacity: 0.55;
+  }
 }
 
 /* NOISE */
